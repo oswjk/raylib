@@ -1,0 +1,9 @@
+INCLUDE(ExternalProject)
+
+ExternalProject_Add(glfw3
+    GIT_REPOSITORY https://github.com/glfw/glfw.git
+    GIT_TAG 3.2.1
+    CMAKE_ARGS -DGLFW_BUILD_EXAMPLES=OFF -DGLFW_BUILD_TESTS=OFF
+        -DGLFW_BUILD_DOCS=OFF
+        -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}
+)
