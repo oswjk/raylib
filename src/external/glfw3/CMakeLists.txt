@@ -1,5 +1,3 @@
-INCLUDE(ExternalProject)
-
 ExternalProject_Add(glfw3
     GIT_REPOSITORY https://github.com/glfw/glfw.git
     GIT_TAG 3.2.1

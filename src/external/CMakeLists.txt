@@ -1,1 +1,7 @@
+INCLUDE(ExternalProject)
+
 ADD_SUBDIRECTORY(glfw3)
+
+IF(WIN32)
+    ADD_SUBDIRECTORY(openal_soft)
+ENDIF()
